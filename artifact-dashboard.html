@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Artifact Dashboard</title>
-  </head>
-  <body>
+    <script type="text/javascript"
+            src="./target/META-INF/resources/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./target/scala-2.12/artifact-dashboard-fastopt.js"></script>
-  </body>
+    <link rel="stylesheet" href="./target/META-INF/resources/webjars/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<h2>Artifact Dashboard v0.5</h2>
+<div id="someid" class="alert alert-primary" role="alert"></div>
+<script>ArtifactDashboard.renderArtifactList(document.getElementById('someid'))</script>
+</body>
 </html>
